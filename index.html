@@ -10,16 +10,132 @@
       rel="stylesheet"
       href="./css/style.css"
     />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Website Kalkulator Suhu - Risav</title>
   </head>
   <body>
     <!-- Header Content -->
-    <header></header>
+    <header>
+      <h1>Website Konversi Suhu | Risav Arrahman</h1>
+    </header>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+      <!-- Introduction -->
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur dolore explicabo cum impedit, error repellat unde sequi nesciunt ratione quas a ipsa, fugit facere distinctio non quaerat magnam eligendi ullam consequatur
+          sunt accusamus rerum animi at. Deleniti eveniet distinctio voluptate ratione eius eaque impedit, ex laudantium illum? Repellat eaque ab pariatur dolore consequuntur excepturi? Error quod nisi quas ab iusto vel animi itaque eum?
+          Eligendi minus magnam impedit, nobis ab explicabo ullam earum consectetur totam fugiat a enim suscipit ad similique! Praesentium culpa non fugit ab modi eius a totam obcaecati reiciendis cumque ad eum rerum, optio eos numquam.
+        </p>
+      </section>
+
+      <!-- Form Konversi Suhu -->
+      <form class="section-content">
+        <div class="section-item">
+          <label for="celsius">Celcius (&deg;C):</label>
+        </div>
+
+        <div class="section-item">
+          <input
+            type="number"
+            name="celsius"
+            id="celsius"
+          />
+        </div>
+
+        <div class="section-item">
+          <button
+            class="bg-1"
+            onclick="convertSuhu()"
+            type="button"
+          >
+            Konversi
+          </button>
+          <button
+            class="bg-2"
+            onclick="resetForm()"
+            type="reset"
+          >
+            Reset
+          </button>
+          <button
+            class="bg-3"
+            onclick="reverse()"
+            type="button"
+          >
+            Reverse
+          </button>
+        </div>
+      </form>
+
+      <!-- Hasil Konversi Suhu -->
+      <section class="section-content">
+        <div>
+          <label for="fahrenheit">Fahrenheit (&deg;F):</label>
+        </div>
+
+        <div>
+          <input
+            type="number"
+            name="fahrenheit"
+            id="fahrenheit"
+          />
+        </div>
+      </section>
+
+      <!-- Penjelasan -->
+      <section class="section-content">
+        <div>
+          <label for="calculation">Cara Kalkulasi :</label>
+        </div>
+
+        <div>
+          <textarea
+            id="calculation"
+            rows="4"
+            readonly
+          ></textarea>
+        </div>
+      </section>
+
+      <!-- Informasi Tambahan -->
+      <section class="section-content">
+        <header>
+          <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+        </header>
+
+        <hr />
+
+        <!-- Konten Informasi -->
+        <article>
+          <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+
+          <!-- Formula -->
+          <div class="formula">S <sub>(&deg;F) </sub> = (S <sub>(&deg;C) </sub> x 9/5) + 32</div>
+
+          <div>atau</div>
+
+          <div class="formula">S <sub>(&deg;F) </sub> = (S <sub>(&deg;C) </sub> x 1,8) + 32</div>
+        </article>
+      </section>
+    </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>&copy; 2025 Risav. All rights reserved.</footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
