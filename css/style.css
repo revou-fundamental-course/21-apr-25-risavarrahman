@@ -30,14 +30,17 @@ button {
 
 .bg-1 {
   background-color: #f8b4b4;
+  margin-bottom: 4px;
 }
 
 .bg-2 {
   background-color: #fce96a;
+  margin-bottom: 4px;
 }
 
 .bg-3 {
   background-color: #a4cafe;
+  margin-bottom: 4px;
 }
 
 .section-content {
@@ -51,4 +54,12 @@ button {
 .formula {
   font-style: italic;
   font-size: xx-large;
+}
+
+@media screen and (max-width: 480px) {
+  #form-action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }

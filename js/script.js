@@ -8,13 +8,13 @@ function convertSuhu() {
 
   // Cek apakah input adalah angka yang valid
   if (isNaN(celsiusValue)) {
-    alert("Masukkan angka yang valid di Celsius!");
-    return; // jika input tidak valid, hentikan eksekusi
+    alert("Inputan tidak boleh kosong");
+    return false; // jika input tidak valid, hentikan eksekusi
+  } else {
+    const fahrenheitValue = (celsiusValue * 9) / 5 + 32;
+    fahrenheitInput.value = fahrenheitValue.toFixed(2);
+    calculationText.value = `${celsiusValue}°C x (9/5) + 32 = ${fahrenheitValue.toFixed(2)}°F`;
   }
-
-  const fahrenheitValue = (celsiusValue * 9) / 5 + 32;
-  fahrenheitInput.value = fahrenheitValue.toFixed(2);
-  calculationText.value = `${celsiusValue}°C x (9/5) + 32 = ${fahrenheitValue.toFixed(2)}°F`;
 }
 
 // Fungsi reset semua input dan hasil
